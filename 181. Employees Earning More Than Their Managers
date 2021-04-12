@@ -1,0 +1,1 @@
+SELECT org.Name AS Employee FROM Employee AS org WHERE org.Salary > (SELECT des.Salary FROM Employee AS des WHERE org.ManagerId = des.Id);
