@@ -1,0 +1,1 @@
+SELECT ws.id FROM Weather AS ws, Weather AS subws WHERE DATEDIFF(ws.recordDate,subws.recordDate) = 1 and ws.temperature > subws.temperature;
